@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign in</title>
+    <script type="text/javascript">
+        function validate()
+        {
+            var username1=document.getElementById("uname1");
+            var username2=document.getElementById("uname2");
+            var password=document.getElementById("pass1");
+            var conformpassword=document.getElementById("pass1");
+            if(username1.value.trim()=="" || password1.value.trim()==""|| username2.value.trim()=="" || conformpassword.value.trim()=="")
+            {
+                alert("No blank Values are allowed");
+                return false;
+            }
+            else{
+                return true;
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit=" return validate()" action="">
+        <input id="uname1" placeholder="username1" type="text"/><br><br>  
+        <input id="uname2" placeholder="username2" type="text"/><br><br> 
+    
+    <input id="pass1" placeholder="password" type="password"/>  <br><br>
+    <input id="pass2" placeholder="conformpassword" type="password"/>  <br><br>
+    <button type="submit">sign in</button>
+</form>
+    
+</body>
+</html>
